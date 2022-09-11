@@ -54,8 +54,13 @@ WTForms==2.3.3
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+* Make sure you have the latest version of Python installed
+* Create a file called requirments.txt
+* Run:
+```
+pip install -r requirements.txt
+
+```
 
 ### Executing program
 
