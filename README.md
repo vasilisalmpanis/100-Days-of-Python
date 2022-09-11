@@ -11,8 +11,46 @@ Even if you have zero programming experience, this course will take you from beg
 
 ### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+* Python Dependancies
+```
+backports.entry-points-selectable==1.1.1
+bcrypt==3.2.0
+certifi==2020.6.20
+cffi==1.15.0
+chardet==3.0.4
+click==8.0.1
+colorama==0.4.4
+distlib==0.3.4
+dnspython==2.1.0
+dominate==2.5.2
+email-validator==1.1.3
+filelock==3.4.0
+Flask==2.0.1
+Flask-Bcrypt==0.7.1
+Flask-Bootstrap==3.3.7.1
+Flask-CKEditor==0.4.4.1
+Flask-Gravatar==0.5.0
+Flask-Login==0.5.0
+Flask-SQLAlchemy==2.5.1
+Flask-WTF==0.15.1
+greenlet==1.1.2
+idna==3.2
+itsdangerous==2.0.1
+Jinja2==3.0.1
+MarkupSafe==2.0.1
+Pillow==8.4.0
+platformdirs==2.4.0
+pycparser==2.21
+requests==2.24.0
+six==1.16.0
+SQLAlchemy==1.4.28
+urllib3==1.25.10
+virtualenv==20.10.0
+visitor==0.1.3
+Werkzeug==2.0.1
+WTForms==2.3.3
+
+```
 
 ### Installing
 
@@ -23,9 +61,6 @@ Even if you have zero programming experience, this course will take you from beg
 
 * How to run the program
 * Step-by-step bullets
-```
-code blocks for commands
-```
 
 ## Help
 
