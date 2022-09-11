@@ -7,6 +7,60 @@ This is my repo for my first ever Python projects from the course 100 Days of Co
 This is one of the most comprehensive Python course available online.
 Even if you have zero programming experience, this course will take you from beginner to professional.
 
+### Tools
+Throughout this comprehensive course, we covered a big amount of tools and technologies, including:
+* Python 3 - the latest version of Python
+* PyCharm, Jupyter Notebook, Google Colab
+* Python Scripting and Automation
+* Python Game Development
+* Web Scraping
+* Beautiful Soup
+* Selenium Web Driver
+* Request
+* WTForms
+* Data Science
+* Pandas
+* NumPy
+* Matplotlib
+* Plotly
+* Scikit learn
+* Seaborn
+* Turtle
+* Python GUI Desktop App Development
+* Tkinter
+* Front-End Web Development
+* HTML 5
+* CSS 3
+* Bootstrap 4
+* Bash Command Line
+* Git, GitHub and Version Control
+* Backend Web Development
+* Flask
+* REST
+* APIs
+* Databases
+* SQL
+* SQLite
+* PostgreSQL
+* Authentication
+* Web Design
+* Deployment with GitHub Pages, Heroku and GUnicorn
+
+### Projects
+Some of the projects we built include:
+
+* Blackjack
+* Snake Game
+* Pong Game
+* Auto Swipe on Tinder
+* Auto Job Applications on LinkedIn
+* Automate Birthday Emails/SMS
+* Fully Fledged Blog Website
+* Build Your Own Public API
+* Data Science with Google Trends
+* Analysing Lego Datasets
+* Google App Store Analysis
+
 ## Getting Started
 
 ### Dependencies
@@ -61,42 +115,7 @@ WTForms==2.3.3
 pip install -r requirements.txt
 ```
 
-### Executing program
+## Course
 
-* How to run the program
-* Step-by-step bullets
-
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
-
-## Authors
-
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
-
-## Version History
-
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
-
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
-
-## Acknowledgments
-
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+URL for the course 
+* [100 Days Of Code - The Complete Python Bootcamp](https://www.udemy.com/course/100-days-of-code/)
