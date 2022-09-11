@@ -1,4 +1,5 @@
-# MyPythonProjects
+
+<h1 align="center"> MyPythonProjects </h1>
 This is my repo for my first ever Python projects from the course 100 Days of Code - The Complete Python Pro Bootcamp by Angela Yu.
 
 This is one of the most comprehensive Python course available online.
