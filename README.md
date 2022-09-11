@@ -59,7 +59,6 @@ WTForms==2.3.3
 * Run:
 ```
 pip install -r requirements.txt
-
 ```
 
 ### Executing program
