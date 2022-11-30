@@ -63,13 +63,14 @@ def add():
 		return redirect(url_for('index'))
 	return render_template("new-cafe.html", form=form)
 
-@app.route('/modify', methods=['GET', 'POST'])
+@app.route('/modify', methods=['GET'])
 def modify():
 	cafes = Cafe.query.all()
+	header = ['Name', 'Delete']
 	render_template("modify_cafes.html", all_cafes=cafes)
 
 @app.route("/delete/<int:cafe_id>")
-def delete_post(cafe_id):
+def delete(cafe_id):
     post_to_delete = Cafe.query.get(cafe_id)
     db.session.delete(post_to_delete)
     db.session.commit()
