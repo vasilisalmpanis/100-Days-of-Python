@@ -14,7 +14,7 @@
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
             <h1>Cafes and Power</h1>
-            <h3 class="subheading">A collection of Cafes all around the world with access to wifi and power.</h3>
+            <h3 class="subheading">A collection of Cafés all around the world with access to wifi and power.</h3>
           </div>
         </div>
       </div>
@@ -34,7 +34,7 @@
       {% for cafes in all_cafes %}
         <tr>
           <td>{{cafes.name}}</td>
-          <td><a href="{{url_for('delete', cafe_id=cafes.id) }}">✘</a></td>
+          <td><a href="{{url_for('cafe_app.delete', cafe_id=cafes.id) }}">✘</a></td>
         </tr>
       {% endfor %}
       </tbody>
