@@ -34,15 +34,7 @@
       {% for cafes in all_cafes %}
         <tr>
           <td>{{cafes.name}}</td>
-          <td><a href="{{cafes.map_url}}" target="_blank">Google Maps</a></td>
-          <td><img src="{{cafes.img_url}}" width="200" height="200"></td>
-          <td>{{cafes.location}}</td>
-          <td>{{cafes.has_toilet}}</td>
-          <td>{{cafes.has_wifi}}</td>
-          <td>{{cafes.has_sockets}}</td>
-          <td>{{cafes.can_take_calls}}</td>
-          <td>{{cafes.seats}}</td>
-          <td>{{cafes.coffee_price}}</td>
+          <td><a href="{{url_for('delete', cafe_id=cafes.id) }}">✘</a></td>
         </tr>
       {% endfor %}
       </tbody>
