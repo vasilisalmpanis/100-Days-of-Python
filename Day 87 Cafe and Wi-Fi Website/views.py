@@ -43,7 +43,11 @@ def modify():
 	return render_template("modify_cafes.html", all_cafes=cafes, headers=header)
 @cafe_app.route("/delete/<int:cafe_id>")
 def delete(cafe_id):
-    post_to_delete = Cafe.query.get(cafe_id)
-    db.session.delete(post_to_delete)
-    db.session.commit()
-    return redirect(url_for('modify'))
+    cafe_to_delete = Cafe.query.get_or_404(cafe_id)
+    try:
+        db.session.delete(cafe_to_delete)
+        db.session.commit()
+    except Exception:
+        db.session.rollback()
+        raise
+    return redirect(url_for('cafe_app.modify'))
