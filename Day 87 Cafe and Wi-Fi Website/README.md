@@ -9,6 +9,6 @@ This assignment includes an SQLite database called cafes.db that lists all the c
 <br>
 Using this database and what you learned about REST APIs and web development, create a website that uses this data. It should display the cafes, but it could also allow people to add new cafes or delete cafes.</h4>
 
-<img src="index.png" height=500 width=600>
-<img src="add_page.png" height=500 width=600>
-<img src="modify.png" height=500 width=600>
+<img src="index.png">
+<img src="add_page.png">
+<img src="modify.png">
