@@ -34,7 +34,7 @@ class Cafe(db.Model):
 @app.route('/', methods=['GET'])
 def index():
 	cafes = Cafe.query.all()
-	header = ['Name', 'Map', 'Img', 'Location','Toilet', 'Wi-Fi', 'Socket','Calls', 'Seats', 'Coffee Price']
+	header = ['Name', 'Google Maps', 'Image', 'Location','Toilet', 'Wi-Fi', 'Socket','Calls', 'Seats', 'Coffee Price']
 	return render_template('index.html', all_cafes = cafes, headers=header)
 
 @app.route('/add_page', methods=['GET', 'POST'])
@@ -67,14 +67,14 @@ def add():
 def modify():
 	cafes = Cafe.query.all()
 	header = ['Name', 'Delete']
-	render_template("modify_cafes.html", all_cafes=cafes)
+	return render_template("modify_cafes.html", all_cafes=cafes, headers=header)
 
 @app.route("/delete/<int:cafe_id>")
 def delete(cafe_id):
     post_to_delete = Cafe.query.get(cafe_id)
     db.session.delete(post_to_delete)
     db.session.commit()
-    return redirect(url_for('index'))
+    return redirect(url_for('modify'))
 
 
 if '__main__' == __name__:

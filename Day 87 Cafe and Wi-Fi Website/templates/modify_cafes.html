@@ -26,27 +26,20 @@
       <thead>
         <tr>
           {% for header in headers %}
-          <th scope="col" class="text-center">{{ header }}</th>
+          <th scope="col">{{ header }}</th>
           {% endfor %}
         </tr>
       </thead>
       <tbody>
       {% for cafes in all_cafes %}
         <tr>
-          <td class="text-center">{{cafes.name}}</td>
-          <td class="text-center"><a href="{{cafes.map_url}}" target="_blank">Google Maps</a></td>
-          <td class="text-center"><img src="{{cafes.img_url}}" width="200" height="200"></td>
-          <td class="text-center">{{cafes.location}}</td>
-          <td class="text-center">{{cafes.has_toilet}}</td>
-          <td class="text-center">{{cafes.has_wifi}}</td>
-          <td class="text-center">{{cafes.has_sockets}}</td>
-          <td class="text-center">{{cafes.can_take_calls}}</td>
-          <td class="text-center">{{cafes.seats}}</td>
-          <td class="text-center">{{cafes.coffee_price}}</td>
+          <td>{{cafes.name}}</td>
+          <td><a href="{{url_for('delete', cafe_id=cafes.id) }}">✘</a></td>
         </tr>
       {% endfor %}
       </tbody>
     </table>
   </div>
+  <div class="d-grid gap-2 col-6 mx-auto"><td><a class="btn btn-warning" href="{{url_for('index')}}">Return to Homepage</a></td></div>
 </body>
 </html>
