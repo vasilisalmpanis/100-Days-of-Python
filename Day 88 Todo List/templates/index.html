@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %}
+    <title>Manage Your Projects From Your Own Comfort | Bold</title>
+{% endblock %}
+
+{% block links %}
+    <link rel="stylesheet" href="styles1.css">
+{% endblock %}
+
+{% block header %}
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Bold</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+{% endblock %}
+
+{%block body%}
+<div class="container-fluid" id="maindiv">
+    <div class="container">
+        <p>Bold brings all your projects together in one single place</p>
+        <p>Start working today </p>
+    </div>
+    <div></div>
+    <div></div>
+</div>
+{% endblock %}

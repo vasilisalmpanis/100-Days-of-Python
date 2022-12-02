@@ -3,23 +3,23 @@
 
 {% block content %}
 
-  <div class="container">
+<div class="container">
     <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-        {{ wtf.quick_form(form, novalidate=True, button_map={"submit": "primary"}) }}
-      </div>
-      <div>
-        {% with messages = get_flashed_messages() %}
-          {% if messages %}
-             <ul class=flashes>
+        <div class="col-lg-8 col-md-10 mx-auto">
+            {{ wtf.quick_form(form, novalidate=True, button_map={"submit": "primary"}) }}
+        </div>
+        <div>
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            <ul class=flashes>
                 {% for message in messages %}
-                  <li>{{ message }}</li>
+                <li>{{ message }}</li>
                 {% endfor %}
-             </ul>
-          {% endif %}
-        {% endwith %}
-      </div>
+            </ul>
+            {% endif %}
+            {% endwith %}
+        </div>
     </div>
-  </div>
+</div>
 
 {% endblock %}

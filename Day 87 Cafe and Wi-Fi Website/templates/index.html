@@ -3,51 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <title>Work n Chill</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
 </head>
 <body style="background-color:#A9AF7E;)">
-  <header class="masthead">
+<header class="masthead">
     <div class="overlay"></div>
     <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="site-heading">
-            <h1>Cafes and Power</h1>
-            <h3 class="subheading">A collection of Cafes all around the world with access to wifi and power.</h3>
-          </div>
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <div class="site-heading">
+                    <h1>Cafes and Power</h1>
+                    <h3 class="subheading">A collection of Cafes all around the world with access to wifi and
+                        power.</h3>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </header>
+</header>
 
-  <div class="container">
+<div class="container">
     <table class="table table-warning table-hover table-bordered border-dark">
-      <thead>
+        <thead>
         <tr>
-          {% for header in headers %}
-          <th scope="col" class="text-center">{{ header }}</th>
-          {% endfor %}
+            {% for header in headers %}
+            <th scope="col" class="text-center">{{ header }}</th>
+            {% endfor %}
         </tr>
-      </thead>
-      <tbody>
-      {% for cafes in all_cafes %}
+        </thead>
+        <tbody>
+        {% for cafes in all_cafes %}
         <tr>
-          <td class="text-center">{{cafes.name}}</td>
-          <td class="text-center"><a href="{{cafes.map_url}}" target="_blank">Google Maps</a></td>
-          <td class="text-center"><img src="{{cafes.img_url}}" width="200" height="200"></td>
-          <td class="text-center">{{cafes.location}}</td>
-          <td class="text-center">{{cafes.has_toilet}}</td>
-          <td class="text-center">{{cafes.has_wifi}}</td>
-          <td class="text-center">{{cafes.has_sockets}}</td>
-          <td class="text-center">{{cafes.can_take_calls}}</td>
-          <td class="text-center">{{cafes.seats}}</td>
-          <td class="text-center">{{cafes.coffee_price}}</td>
+            <td class="text-center">{{cafes.name}}</td>
+            <td class="text-center"><a href="{{cafes.map_url}}" target="_blank">Google Maps</a></td>
+            <td class="text-center"><img src="{{cafes.img_url}}" width="200" height="200"></td>
+            <td class="text-center">{{cafes.location}}</td>
+            <td class="text-center">{{cafes.has_toilet}}</td>
+            <td class="text-center">{{cafes.has_wifi}}</td>
+            <td class="text-center">{{cafes.has_sockets}}</td>
+            <td class="text-center">{{cafes.can_take_calls}}</td>
+            <td class="text-center">{{cafes.seats}}</td>
+            <td class="text-center">{{cafes.coffee_price}}</td>
         </tr>
-      {% endfor %}
-      </tbody>
+        {% endfor %}
+        </tbody>
     </table>
-  </div>
-  <div></div>
+</div>
+<div></div>
 </body>
 </html>
