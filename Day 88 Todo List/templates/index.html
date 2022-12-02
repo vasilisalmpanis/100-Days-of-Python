@@ -1,45 +1,59 @@
 {% extends "base.html" %}
 
 {% block title %}
-    <title>Manage Your Projects From Your Own Comfort | Bold</title>
+    <title>Manage Your Projects From The Comofort of Your Own Home | Bold</title>
 {% endblock %}
 
 {% block links %}
-    <link rel="stylesheet" href="styles1.css">
-{% endblock %}
-
-{% block header %}
-<nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Bold</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Login</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+    <link rel="stylesheet" href="static/styles_header.css">
 {% endblock %}
 
 {%block body%}
-<div class="container-fluid" id="maindiv">
-    <div class="container">
-        <p>Bold brings all your projects together in one single place</p>
-        <p>Start working today </p>
+<div class="flex-container">
+    <div class="container m-auto">
+        <div class="container">
+        <p><h1 class="new"><strong> Bold</strong> brings all your projects together in a single place</h1></p>
+        </div>
+        <div class="container">
+        <p><h3>Start working today. </h3> </p>
+        </div>
+        <div class="container">
+            <button type="button" class="btn btn-primary btn-lg">Try it now</button>
+        </div>
     </div>
     <div></div>
-    <div></div>
+    <div style="outline: 5px solid white;" class="image-container"> 
+        <img src="https://penntoday.upenn.edu/sites/default/files/2022-02/Plotkin-cooperation.jpeg" style="position: relative;" width=600 height=500 id="indexphoto">
+    </div>
+</div>
+<hr>
+
+    <div class="cards-area">
+        <div class="container">
+            <div class="row card-columns d-flex align-items-center justify-content-center">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="img1"><img id="hey" src="https://cdn.shopify.com/s/files/1/0070/7032/files/best-website-builders.jpg?v=1616816981&width=1024" alt=""></div>
+                        <div class="main-text">
+                            <h4 class="card-title"><strong>Jumpstart your organizing..</strong></h4>
+                            <p class="card-text">Focus on what matters and get things dones in due time. Excel in your deadlines and deliver outstanding results</p>
+                            <a href="#" class="btn btn-primary stretched-link">Register</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="img2"><img id="hey" src="https://cdn.shopify.com/s/files/1/0070/7032/files/1-build-a-website.jpg?v=1615422396" alt=""></div>
+                        <div class="main-text">
+                            <h4 class="card-title"><strong>Jumpstart your organizing..</strong></h4>
+                            <p class="card-text">Focus on what matters and get things dones in due time. Excel in your deadlines and deliver outstanding results</p>
+                            <a href="#" class="btn btn-primary stretched-link">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock %}
+

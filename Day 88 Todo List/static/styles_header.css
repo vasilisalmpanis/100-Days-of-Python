@@ -1,3 +1,47 @@
-.container {
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #D8F3F8;
+}
 
+#indexphoto {
+    border-radius: 50px;
+}
+
+.flex-container {
+    display: flex;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 3%;
+    padding-bottom: 4%;
+}
+
+.new {
+    word-wrap: normal;
+}
+
+.image-container {
+    padding: 4%;
+}
+
+.cards-area {
+    padding: 50px 0;
+    
+}
+.card {
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 25px 10px;
+}
+
+#hey{
+    height:200px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 100%;
+}
+
+.main-text {
+    padding: 30px 15px;
+    text-align: center;
 }
