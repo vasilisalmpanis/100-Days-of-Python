@@ -3,3 +3,19 @@
 {% block title %}
     <title>About Us | Bold</title>
 {% endblock %}
+
+{% block links %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles1.css') }}">
+{% endblock %}
+
+{% block body %}
+
+<div>
+    <div class="container">
+        <div class="container title" style="text-align: center;"><h1 class="title">Bold makes your organizing activities go to the next level</h1></div>
+    </div>
+    <div class="container"> <p>What is Trello? Trello is the visual tool that empowers your team to manage any type of project, workflow, or task tracking. Add files, checklists, or even automation: Customize it all for how your team works best. Just sign up, create a board, and you’re off!</p></div>
+    <div class="container"><button type="button" class="btn btn-primary btn-lg">Try it now</button></div>
+</div>
+
+{% endblock %}

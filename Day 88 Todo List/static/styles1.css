@@ -1,0 +1,24 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #D8F3F8;
+}
+
+.container {
+    padding: 5%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+background-color: #62B6B7;
+border-radius: 25px;
+    color: white;
+    font-size: 50px;
+}
+
+p {
+    text-align: center ;
+    color: rgb(9, 30, 66);
+    font-size: 25px;
+}
