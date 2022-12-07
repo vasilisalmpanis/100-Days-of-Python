@@ -34,7 +34,6 @@ def application():
 	@app.route('/')
 	def index():
 		return render_template("index.html")
-
 	return app
 
 if '__main__' == __name__:
