@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %} <title>Login | Bold</title> {% endblock %}
+
+{% block body %}
+ <body>
+    <div class="container" style="margin:4% 4%;">
+        <h3 style="text-align:center; padding-bottom: 2%;">Nice to see you again</h3>
+        <div class="container" style="width: 300px; padding: 10% 2%; background-color:darkgrey; border-radius: 15px;">
+            {{ wtf.quick_form(form, novalidate=True, button_map={"submit": "primary"}) }}
+            <a href="{{url_for('auth.register')}}" class="btn btn-primary-sm success">Create an account</a>
+            <a class="btn btn-primary-sm success">Forgot your password?</a>
+        </div>
+    </div>
+ </body>
+
+ {% endblock %}
