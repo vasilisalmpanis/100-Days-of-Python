@@ -1,0 +1,17 @@
+{% import "bootstrap/wtf.html" as wtf %}
+{% extends "base.html" %}
+
+{% block title %}
+<title>Add activity | Bold</title>
+
+{% endblock %}
+
+{%block body %}
+<body>
+  <div class="container" style="margin:4% 4%;">
+      <h3 style="text-align:center; padding-bottom: 2%;">Add new activity</h3>
+      <div class="container" style="width: 300px; padding: 7% 2%; background-color:darkgrey; border-radius: 15px;">
+          {{ wtf.quick_form(form, novalidate=True, button_map={"submit": "primary"}) }}
+      </div>
+  </div>
+{% endblock %}

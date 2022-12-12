@@ -28,7 +28,7 @@ def register():
 		db.session.add(new_user)
 		db.session.commit()
 		login_user(new_user)
-		return redirect(url_for('todo_app.index'))
+		return redirect(url_for('todo_app.main'))
 	return render_template('register.html', form=form, user=current_user)
 
 @auth.route('/login', methods=['GET', 'POST'])
@@ -39,7 +39,7 @@ def login():
 		if user:
 			if check_password_hash(user.password, form.password.data):
 				login_user(user)
-				return redirect(url_for('todo_app.index'))
+				return redirect(url_for('todo_app.main'))
 			else:
 				flash('Incorrect Password, please try again.', category='error')
 		else:
