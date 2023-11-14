@@ -110,6 +110,7 @@ WTForms==2.3.3
 
 * Make sure you have the latest version of Python installed
 * Create a file called requirments.txt
+* Paste dependencies into requirements.txt
 * Run:
 ```
 pip install -r requirements.txt
