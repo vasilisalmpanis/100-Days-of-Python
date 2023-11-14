@@ -18,8 +18,8 @@ for i in dict:
             x = mlk.replace("[NAME]", i["name"])
         with smtplib.SMTP("smtp.gmail.com") as connection:
             connection.starttls()
-            connection.login(user="vasilisalmpanis@gmail.com", password="6980691434")
-            connection.sendmail(from_addr="vasilisalmpanis@gmail.com", to_addrs=i["email"], msg=f"Subject: Happy Birthday"     
+            connection.login(user="example", password="example")
+            connection.sendmail(from_addr="example", to_addrs=i["email"], msg=f"Subject: Happy Birthday"     
                                                                                                 f"\n\n{text}")
 
 
